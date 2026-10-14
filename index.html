@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Celebration Lights -->
+    <div class="celebration-lights" id="celebrationLights">
+        <span>💡</span>
+        <span>💡</span>
+        <span>💡</span>
+        <span>💡</span>
+        <span>💡</span>
+        <span>💡</span>
+        <span>💡</span>
+    </div>
+
+    <!-- Fireworks -->
+    <canvas id="fireworks"></canvas>
+
+    <!-- Game -->
+    <main class="game-container">
+        <div class="game-icon">🎯</div>
+
+        <h1>Number Guessing Game</h1>
+
+        <p class="subtitle">
+            Guess a number between 1 and 50!
+        </p>
+
+        <form id="guessForm">
+            <input
+                type="number"
+                id="guessInput"
+                min="1"
+                max="50"
+                placeholder="Enter your guess"
+                aria-label="Enter your guessed number"
+                required
+            >
+
+            <button type="submit" id="checkBtn">
+                Check Number
+            </button>
+        </form>
+
+        <p id="message" aria-live="polite">
+            Let's start guessing!
+        </p>
+
+        <div class="attempt-box">
+            Attempts: <span id="attempts">0</span>
+        </div>
+
+        <button type="button" id="restartBtn" class="restart-btn">
+            🔄 Play Again
+        </button>
+
+        <p class="footer-text">Made with ❤️ using HTML, CSS & JavaScript</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
